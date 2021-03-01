@@ -45,7 +45,7 @@
 \begin{lstlisting}[language=lisp]
 (define (encode lst)
   (cond
-    ((nu?? lst) '())
+    ((null? lst) '())
     ((list? (first lst))
      (cons
       (list (length (first lst))
