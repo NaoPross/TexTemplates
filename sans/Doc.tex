@@ -1,0 +1,58 @@
+\documentclass[a4paper, twocolumn]{article}
+
+%
+% Packages
+%
+
+%% styling for this document
+\usepackage{tex/docstyle}
+
+%% test text
+\usepackage{blindtext}
+
+%
+% Metadata
+%
+
+\title{A Template for a Document}
+\author{
+  Naoki Pross%\footnote{University of Applied Sciences of Eastern Switzerland}
+}
+\date{\today}
+
+%
+% Document
+%
+
+
+\begin{document}
+\maketitle
+
+% \begin{abstract}
+% \end{abstract}
+
+\tableofcontents
+
+\section{Introduction}
+\blindtext
+\[
+  \frac{\partial^2\psi}{\partial x^2} =
+  - \frac{1}{u^2}\frac{\partial^2\psi}{\partial t^2}
+\]
+
+\section{Write programs in SCHEME}
+\blindtext
+\begin{lstlisting}[language=lisp]
+(define (encode lst)
+  (cond
+    ((nu?? lst) '())
+    ((list? (first lst))
+     (cons
+      (list (length (first lst))
+      (first (first ls)))
+      (encode (rest lst))))
+    (else (encode (pack lst)))))
+\end{lstlisting}
+\blindtext[3]
+
+\end{document}
