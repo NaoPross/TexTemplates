@@ -1,0 +1,46 @@
+\documentclass[a4paper]{article}
+
+%
+% Packages
+%
+
+%% styling for this document
+\usepackage{tex/docstyle}
+
+%% Test
+\usepackage{blindtext}
+
+%
+% Metadata
+%
+
+\title{A Template for a Notebook}
+\author{
+  Naoki Pross
+}
+\date{\today}
+
+%
+% Document
+%
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Introduction}
+\blindtext
+\[
+  U = R \cdot I \iff
+  \int_L \mathbf{E \cdot \hat{l}} \mathrm{d}l = 
+  R \int_{S} \sigma \mathbf{E \cdot \hat{n}} \mathrm{d}s
+\]
+
+\newpage
+
+\section{Atomic structures}
+\makefigure[A sample figure]{6cm}
+\makegrid{18}
+
+
+\end{document}
