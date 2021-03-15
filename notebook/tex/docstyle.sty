@@ -82,7 +82,7 @@
 \newcommand{\makegrid}[1]{
   \begin{center}\begin{tikzpicture}
     \draw[
-      draw=GridColor, fill=white,
+      dotted, draw=GridColor, fill=white,
       step=4mm,
     ] (0, 0) grid (\linewidth, #1 * 8mm);
   \end{tikzpicture}\end{center}
@@ -91,7 +91,7 @@
 \newcommand{\makefigure}[2][]{
   \begin{center}\begin{tikzpicture}
     \draw[
-      thick, draw=GridColor, fill=white
+      draw=GridColor, fill=white
     ] (0, 0) rectangle (\linewidth, #2);
     \node[
       text=GridColor, anchor=north west
